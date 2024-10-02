@@ -1,17 +1,19 @@
 ---
-import logo from '../../public/images/Logo.jpg'
+import logo from "../../public/images/Logo.jpg";
 ---
-<nav class="flex items-center bg-transparent py-2 px-6 text-black text-sm font-extrabold relative justify-between z-10">
-    <div>
-        <img src={logo.src} alt="" class="w-14 rounded-full mr-5">
-    </div>
-    <div class="">
-        <ul class="flex gap-4">
-            <li><a href="">HOME</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">TIENDA</a></li>
-            <li><a href="">CONTACTO</a></li>
-        </ul>
-    </div>
-</nav>
 
+<nav
+  class="flex items-center bg-transparent py-2 px-6 text-black text-sm font-extrabold justify-between z-10 absolute w-screen"
+>
+  <div>
+    <img src={logo.src} alt="" class="w-14 rounded-full mr-5" />
+  </div>
+  <div class="mr-8">
+    <ul class="flex gap-4">
+      <li><a href="">HOME</a></li>
+      <li><a href="">BLOG</a></li>
+      <li><a href="">TIENDA</a></li>
+      <li><a href="">CONTACTO</a></li>
+    </ul>
+  </div>
+</nav>

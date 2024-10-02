@@ -1,20 +1,22 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/CardPost.astro';
-import fondo from '../../public/images/fondo.jpg'
-import NavBar from '../components/NavBar.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/CardPost.astro";
+import fondo from "../../public/images/fondo.jpg";
+import NavBar from "../components/NavBar.astro";
 ---
 
-
 <Layout title="Home.">
-	<NavBar/>
-	<section class="">
-		<img src={fondo.src} alt="" class="top-0 fixed w-screen h-screen">
-	</section>
-	<section>
-		<div>
-			<h2>Hola</h2>
-		</div>
-	</section>
+  <section class="relative">
+    <NavBar />
+    <img
+      src={fondo.src}
+      alt=""
+      class="object-cover object-top h-screen w-screen"
+    />
+  </section>
+  <section>
+    <div>
+      <h2>Hola</h2>
+    </div>
+  </section>
 </Layout>
-

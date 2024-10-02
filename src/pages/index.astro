@@ -2,21 +2,32 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/CardPost.astro";
 import fondo from "../../public/images/fondo.jpg";
+import frame from "../../public/images/frame.svg";
 import NavBar from "../components/NavBar.astro";
+import Redes from "../components/RedesSociales.astro";
 ---
 
 <Layout title="Home.">
-  <section class="relative">
+  <section class="relative h-screen">
     <NavBar />
     <img
       src={fondo.src}
       alt=""
-      class="object-cover object-top h-screen w-screen"
+      class="absolute object-cover object-top h-screen w-screen"
     />
+    <img
+      src={frame.src}
+      alt=""
+      class="absolute object-cover bottom-0 w-screen h-28 z-10 inset-x-0"
+    />
+    <div class="absolute z-10 w-screen">
+      <p class="mt-96 text-center text-white text-lg font-semibold">
+        WELCOME TO MY WEB SITE
+      </p>
+    </div>
+    <Redes />
   </section>
   <section>
-    <div>
-      <h2>Hola</h2>
-    </div>
+    <div></div>
   </section>
 </Layout>

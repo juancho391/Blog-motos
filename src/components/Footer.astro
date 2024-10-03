@@ -1,9 +1,32 @@
 ---
 import Logo from "../../public/images/Logo.jpg";
 import imageFooter from "../../public/images/Footer.png";
+import instagramfoot from "../../public/images/instagramfoot.svg";
+import facebookfoot from "../../public/images/facebookfoot.svg";
+import youtubefoot from "../../public/images/youtubefoot.svg";
+import tiktokfoot from "../../public/images/tiktokfoot.svg";
 ---
 
-<div class="hidden md:block">
-  <img src={imageFooter.src} alt="" class="w-screen -ml-1" />
+<div class="">
+  <div class="hidden md:block">
+    <img src={imageFooter.src} alt="" class="w-screen -mb-2" />
+  </div>
+  <div
+    class="relative hidden md:flex md:flex-wrap w-screen bg-black h-40 justify-between px-20"
+  >
+    <div class="flex left-24 -top-14 h-24 w-60 justify-between">
+      <img src={Logo.src} alt="" class="w-24 rounded-full mr-5" />
+      <a href="" class="text-white my-auto text-lg">Contactame</a>
+    </div>
+    <p class="absolute text-white bottom-2 left-2">© 2024 NOMBRE</p>
+    <div class="right-72 bottom-16 w-72">
+      <p class="text-white text-xl">Redes Sociales</p>
+      <div class="flex gap-3 mx-5 mt-3">
+        <a href=""><img src={instagramfoot.src} alt="" /></a>
+        <a href=""><img src={facebookfoot.src} alt="" /></a>
+        <a href=""><img src={youtubefoot.src} alt="" /></a>
+        <a href=""><img src={tiktokfoot.src} alt="" /></a>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="w-screen bg-black h-32"></div>

@@ -2,9 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import NavBar from "../components/NavBar.astro";
 import Footer from "../components/Footer.astro";
+import CardPost from "../components/BlogComponents/CardPost.astro";
+const exampleImg = "../../public/images/examplePost.svg"
+const exampleImg2 = "../../public/images/examplePost2.svg"
 ---
 
 <Layout title="My Blog">
   <NavBar />
+  <CardPost hrefIMG={exampleImg2} title="Mi primer post" body="Este es el body de mi primer post" dateTime="03/10/2024"/>
   <Footer />
 </Layout>

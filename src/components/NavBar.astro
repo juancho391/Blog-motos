@@ -3,16 +3,20 @@ import logo from "../../public/images/Logo.jpg";
 ---
 
 <nav
-  class="flex items-center bg-transparent py-2 px-2 text-black text-xs font-extrabold justify-between z-20 absolute w-screen"
+  class="flex items-center bg-transparent py-2 px-2 text-black text-xs md:text-lg font-extrabold justify-between z-20 absolute w-screen md:mx-3"
 >
   <div>
     <img src={logo.src} alt="" class="w-14 rounded-full mr-5" />
   </div>
-  <div class="">
+  <div class="md:mr-8">
     <ul class="flex gap-2">
       <li class="py-2 px-1 hover:bg-nav rounded-xl"><a href="/">HOME</a></li>
-      <li class="py-2 px-1 hover:bg-nav rounded-xl"><a href="/Blog">BLOG</a></li>
-      <li class="py-2 px-1 hover:bg-nav rounded-xl"><a href="/Tienda">TIENDA</a></li>
+      <li class="py-2 px-1 hover:bg-nav rounded-xl">
+        <a href="/Blog">BLOG</a>
+      </li>
+      <li class="py-2 px-1 hover:bg-nav rounded-xl">
+        <a href="/Tienda">TIENDA</a>
+      </li>
       <li class="py-2 px-1 hover:bg-nav rounded-xl">
         <a href="">CONTACTO</a>
       </li>

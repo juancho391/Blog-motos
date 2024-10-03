@@ -1,0 +1,21 @@
+---
+interface Props {
+	title: string;
+	body: string;
+	hrefIMG: string;
+	dateTime: string;
+}
+
+const { hrefIMG, body, dateTime, title } = Astro.props;
+---
+
+<div class="border-2 w-56 h-60 mt-3">
+	<div class="h-36">
+		<img class="w-full h-full object-cover" src={hrefIMG} alt="Imagen">
+	</div>
+	<div class="">
+		<h3 class="text-center font-bold text-lg">{title}</h3>
+		<p class="text-justify text-sm mt-1">{body}</p>
+		<h6 class="text-xs mt-2 text-white">{dateTime}</h6>
+	</div>
+</div>

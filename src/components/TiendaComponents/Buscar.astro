@@ -1,0 +1,24 @@
+---
+import Lupa from "../../../public/images/Buscador/Lupa.svg";
+import Filtro from "../../../public/images/Buscador/Filtro.svg";
+---
+
+<div
+  class="flex bg-white w-72 rounded-3xl justify-between m-auto my-3 border-2 border-black"
+>
+  <input
+    type="text"
+    name=""
+    id="Buscador"
+    placeholder="Buscar"
+    class="px-2 rounded-full outline-none"
+  />
+  <label for="Buscador">
+    <div class="py-1 px-3 rounded-full border-r-2 border-black">
+      <img src={Lupa.src} alt="" class="h-5" />
+    </div>
+  </label>
+  <div class="py-1 pr-2">
+    <img src={Filtro.src} alt="" class="h-5" />
+  </div>
+</div>

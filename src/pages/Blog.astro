@@ -1,14 +1,88 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import NavBar from "../components/NavBar.astro";
+import NavBar from "../components/BlogComponents/NavBarBlog.astro";
 import Footer from "../components/Footer.astro";
 import CardPost from "../components/BlogComponents/CardPost.astro";
-const exampleImg = "../../public/images/examplePost.svg"
-const exampleImg2 = "../../public/images/examplePost2.svg"
+import Redes from "../components/RedesSociales.astro";
+const exampleImg = "../../public/images/examplePost.svg";
+const exampleImg2 = "../../public/images/examplePost2.svg";
 ---
 
 <Layout title="My Blog">
   <NavBar />
-  <CardPost hrefIMG={exampleImg2} title="Mi primer post" body="Este es el body de mi primer post" dateTime="03/10/2024"/>
-  <Footer />
+  <div class="bg-gradient-to-b from-black to-[#939292] w-screen h-7 mb-2"></div>
+  <div class="flex items-center mx-auto w-full flex-wrap">
+    <div class="grid grid-cols-1 flex-wrap gap-4 mx-auto sm:grid-cols-3">
+      <CardPost
+        hrefIMG={exampleImg2}
+        title="Mi primer post"
+        body="Este es el body de mi primer post Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et minus distinctio libero, nostrum nemo voluptatibus commodi dicta quam placeat sunt, numquam omnis eos obcaecati asperiores exercitationem facilis, iusto quod. "
+        dateTime="03/10/2024"
+      />
+      <CardPost
+        hrefIMG={exampleImg2}
+        title="Mi primer post"
+        body="Este es el body de mi primer post Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et minus distinctio libero, nostrum nemo voluptatibus commodi dicta quam placeat sunt, numquam omnis eos obcaecati asperiores exercitationem facilis, iusto quod."
+        dateTime="03/10/2024"
+      />
+      <CardPost
+        hrefIMG={exampleImg2}
+        title="Mi primer post"
+        body="Este es el body de mi primer post Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et minus distinctio libero, nostrum nemo voluptatibus commodi dicta quam placeat sunt, numquam omnis eos obcaecati asperiores exercitationem facilis, iusto quod."
+        dateTime="03/10/2024"
+      />
+      <CardPost
+        hrefIMG={exampleImg2}
+        title="Mi primer post"
+        body="Este es el body de mi primer post Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et minus distinctio libero, nostrum nemo voluptatibus commodi dicta quam placeat sunt, numquam omnis eos obcaecati asperiores exercitationem facilis, iusto quod."
+        dateTime="03/10/2024"
+      />
+      <CardPost
+        hrefIMG={exampleImg2}
+        title="Mi primer post"
+        body="Este es el body de mi primer post Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et minus distinctio libero, nostrum nemo voluptatibus commodi dicta quam placeat sunt, numquam omnis eos obcaecati asperiores exercitationem facilis, iusto quod."
+        dateTime="03/10/2024"
+      />
+      <CardPost
+        hrefIMG={exampleImg2}
+        title="Mi primer post"
+        body="Este es el body de mi primer post Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et minus distinctio libero, nostrum nemo voluptatibus commodi dicta quam placeat sunt, numquam omnis eos obcaecati asperiores exercitationem facilis, iusto quod."
+        dateTime="03/10/2024"
+      />
+      <CardPost
+        hrefIMG={exampleImg2}
+        title="Mi primer post"
+        body="Este es el body de mi primer post Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et minus distinctio libero, nostrum nemo voluptatibus commodi dicta quam placeat sunt, numquam omnis eos obcaecati asperiores exercitationem facilis, iusto quod."
+        dateTime="03/10/2024"
+      />
+      <CardPost
+        hrefIMG={exampleImg2}
+        title="Mi primer post"
+        body="Este es el body de mi primer post Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et minus distinctio libero, nostrum nemo voluptatibus commodi dicta quam placeat sunt, numquam omnis eos obcaecati asperiores exercitationem facilis, iusto quod."
+        dateTime="03/10/2024"
+      />
+      <CardPost
+        hrefIMG={exampleImg2}
+        title="Mi primer post"
+        body="Este es el body de mi primer postLorem ipsum dolor sit amet consectetur adipisicing elit.  Voluptate et minus distinctio libero, nostrum nemo voluptatibus commodi dicta quam placeat sunt, numquam omnis eos obcaecati asperiores exercitationem facilis, iusto quod."
+        dateTime="03/10/2024"
+      />
+      <CardPost
+        hrefIMG={exampleImg2}
+        title="Mi primer post"
+        body="Este es el body de mi primer post Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et minus distinctio libero, nostrum nemo voluptatibus commodi dicta quam placeat sunt, numquam omnis eos obcaecati asperiores exercitationem facilis, iusto quod."
+        dateTime="03/10/2024"
+      />
+      <CardPost
+        hrefIMG={exampleImg2}
+        title="Mi primer post"
+        body="Este es el body de mi primer post Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et minus distinctio libero, nostrum nemo voluptatibus commodi dicta quam placeat sunt, numquam omnis eos obcaecati asperiores exercitationem facilis, iusto quod."
+        dateTime="03/10/2024"
+      />
+    </div>
+  </div>
+  <Redes />
+  <footer class="absolute mt-6">
+    <Footer />
+  </footer>
 </Layout>

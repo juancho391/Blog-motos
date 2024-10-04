@@ -10,14 +10,15 @@ const { hrefIMG, body, dateTime, title } = Astro.props;
 ---
 
 <div
-  class="ml-3 bg-white w-56 h-60 mt-3 hover:animate-heartbeat hover:bg-black hover:text-white"
->
-  <div class="h-36">
-    <img class="w-full h-full object-cover" src={hrefIMG} alt="Imagen" />
+  class="ml-3 bg-white w-72 w-min-40 h-64 mt-3 hover:animate-heartbeat box-content shadow-lg shadow-black rounded-sm">
+  <div class="h-44">
+    <img class="w-full w-min0 h-full object-cover rounded-sm" src={hrefIMG} alt="Imagen" />
   </div>
   <div class="">
     <h3 class="text-center font-bold text-lg">{title}</h3>
-    <p class="text-justify text-sm mt-1 truncate overflow-hidden m-1">{body}</p>
-    <h6 class="text-xs mt-5 m-1">{dateTime}</h6>
+	<div class="h-full">
+		<p class="h-4 text-justify text-[12px] mt-1 truncate overflow-hidden m-1 mb-3">{body}</p>
+	</div>
+    <h6 class="text-[10px] my-auto m-1">{dateTime}</h6>
   </div>
 </div>

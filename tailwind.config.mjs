@@ -7,6 +7,7 @@ export default {
       colors: {
         nav: "#939292e4",
         redes: "#00000080",
+        fondo: "#939292",
       },
       margin: {
         medioy: "50%",

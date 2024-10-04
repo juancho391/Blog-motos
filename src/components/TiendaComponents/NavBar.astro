@@ -1,0 +1,31 @@
+---
+import logo from "../../../public/images/Logo.jpg";
+---
+
+<nav
+  class="flex items-center bg-black py-2 px-2 text-white text-xs md:text-lg font-extrabold justify-between z-20 w-screen md:mx-3 border-b-2 border-fondo"
+>
+  <div>
+    <img
+      src={logo.src}
+      alt=""
+      class="w-14 rounded-full mr-5 border-2 border-white"
+    />
+  </div>
+  <div class="md:mr-8">
+    <ul class="flex gap-2">
+      <li class="py-2 px-1 hover:bg-nav rounded-xl hover:animate-jelly">
+        <a href="/">HOME</a>
+      </li>
+      <li class="py-2 px-1 hover:bg-nav rounded-xl hover:animate-jelly">
+        <a href="/Blog">BLOG</a>
+      </li>
+      <li class="py-2 px-1 hover:bg-nav rounded-xl hover:animate-jelly">
+        <a href="/Tienda">TIENDA</a>
+      </li>
+      <li class="py-2 px-1 hover:bg-nav rounded-xl hover:animate-jelly">
+        <a href="/Contacto">CONTACTO</a>
+      </li>
+    </ul>
+  </div>
+</nav>

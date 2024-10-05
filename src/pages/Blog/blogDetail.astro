@@ -1,0 +1,22 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CardPostDetail from "../../components/BlogComponents/CardPostDetail.astro";
+const exampleImg2 = "../../../public/images/examplePost2.svg";
+const imageHome = "../../../public/images/fondo.jpg";
+---
+
+<Layout title="Blog-Post-Detail">
+  <div class="flex flex-col items-center justify-center h-screen mt-7">
+    <div class="flex flex-col items-center justify-center w-min w-max-[600px] h-full">
+      <CardPostDetail
+        hrefIMG={exampleImg2}
+        title="Mi primer post"
+        body="Este es el body de mi primer post Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et minus distinctio libero, nostrum nemo voluptatibus commodi dicta quam placeat sunt, numquam omnis eos obcaecati asperiores exercitationem facilis, iusto quod Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam velit totam molestias quo expedita accusantium quam. Ullam esse nam ducimus quam minima rerum porro. Animi voluptatibus aperiam nobis aliquam, debitis nam quod ab dolorem, unde architecto consectetur repellat ducimus, quisquam voluptas molestiae esse enim. Pariatur dolorum mollitia quod eaque numquam doloribus reiciendis natus cupiditate, harum, in provident, quasi dicta animi explicabo quisquam sapiente tempora voluptatum modi quas rem adipisci officia perferendis optio dolorem. Magnam quam sit, adipisci esse repellat error fugiat aliquid nemo veritatis. Maxime, eveniet magnam sit explicabo, dignissimos itaque officiis recusandae quam, ut ab et rerum voluptatum minus.. "
+        dateTime="03/10/2024"
+      />
+    </div>
+    <!-- <div class="w-full fixed">
+      <img src={imageHome} alt="" class="object-cover hover:animate-float" />
+    </div> -->
+  </div>
+</Layout>

@@ -1,26 +1,35 @@
 ---
+const  backIcon  = "../../../public/images/backIcon.svg"
 interface Props {
   title: string;
   body: string;
   hrefIMG: string;
   dateTime: string;
+  videoUrl: string;
 }
 
-const { hrefIMG, body, dateTime, title } = Astro.props;
+const { hrefIMG, body, dateTime, title , videoUrl } = Astro.props;
 ---
 
 <div
-  class="w-full h-full bg-white hover:animate-heartbea rounded-sm">
-  <div class="w-[600px]">
-    <img class="rounded-sm mx-auto h-[400px] " src={hrefIMG} alt="Imagen" />
+  class="w-full h-full bg-[#D9D6D6] hover:animate-heartbea rounded-sm flex items-center justify-center flex-col py-3">
+  <div class="left-0 z-20  w-8 absolute top-0 mt-2 ml-1">
+    <a href="/Blog">
+      <img src={backIcon} alt="" class="relative hover:bg-white">
+    </a>
+  </div>
+  <div class=" sm:w-[600px]">
+    <img class="rounded-sm mx-auto sm:h-[400px] " src={hrefIMG} alt="Imagen" />
   </div>
   <div class="mx-7">
     <h3 class="text-center font-bold text-xl mx-9 mt-3">{title}</h3>
+    <h6 class="text-[10px] my-auto mb-3 mt-3 font-bold">{dateTime}</h6>
 	<div class="">
-		<p class=" text-justify text-[12px] mt-3">{body}</p>
-	</div>
-    <h6 class="text-[10px] my-auto ">{dateTime}</h6>
-  </div>
+		<p class=" text-justify text-[12px] mt-3 mb-2">{body}</p>
+	</div >
+  <div class="bg-[#F80000] container rounded-full max-w-28 text-center text-white border-2 border-black">
+    <a href={videoUrl}>Ver Video</a> 
+
 </div>
 
 

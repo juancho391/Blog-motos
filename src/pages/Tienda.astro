@@ -4,11 +4,85 @@ import NavBar from "../components/TiendaComponents/NavBar.astro";
 import NavCategorias from "../components/TiendaComponents/NavCategorias.astro";
 import Redes from "../components/RedesSociales.astro";
 import Buscar from "../components/TiendaComponents/Buscar.astro";
+import CardPost from "../components/TiendaComponents/CardPost.astro";
+import Moto from "../../public/images/moto.svg";
 ---
 
 <Layout title="Tienda.">
   <NavBar />
   <NavCategorias />
   <Redes />
-  <Buscar />
+  <div class="h-11">
+    <Buscar />
+  </div>
+  <div class="flex items-center flex-wrap mb-10">
+    <div class="grid grid-cols-1 flex-wrap gap-4 mx-auto sm:grid-cols-3">
+      <CardPost
+        hrefIMG={Moto.src}
+        title="YAMAHA MT-09"
+        body="2021 - 10.000 kms"
+        precio="$60.000.000"
+      />
+      <CardPost
+        hrefIMG={Moto.src}
+        title="YAMAHA MT-09"
+        body="2021 - 10.000 kms"
+        precio="$60.000.000"
+      />
+      <CardPost
+        hrefIMG={Moto.src}
+        title="YAMAHA MT-09"
+        body="2021 - 10.000 kms"
+        precio="$60.000.000"
+      />
+      <CardPost
+        hrefIMG={Moto.src}
+        title="YAMAHA MT-09"
+        body="2021 - 10.000 kms"
+        precio="$60.000.000"
+      />
+      <CardPost
+        hrefIMG={Moto.src}
+        title="YAMAHA MT-09"
+        body="2021 - 10.000 kms"
+        precio="$60.000.000"
+      />
+      <CardPost
+        hrefIMG={Moto.src}
+        title="YAMAHA MT-09"
+        body="2021 - 10.000 kms"
+        precio="$60.000.000"
+      />
+      <CardPost
+        hrefIMG={Moto.src}
+        title="YAMAHA MT-09"
+        body="2021 - 10.000 kms"
+        precio="$60.000.000"
+      />
+      <CardPost
+        hrefIMG={Moto.src}
+        title="YAMAHA MT-09"
+        body="2021 - 10.000 kms"
+        precio="$60.000.000"
+      />
+      <CardPost
+        hrefIMG={Moto.src}
+        title="YAMAHA MT-09"
+        body="2021 - 10.000 kms"
+        precio="$60.000.000"
+      />
+      <CardPost
+        hrefIMG={Moto.src}
+        title="YAMAHA MT-09"
+        body="2021 - 10.000 kms"
+        precio="$60.000.000"
+      />
+      <CardPost
+        hrefIMG={Moto.src}
+        title="YAMAHA MT-09"
+        body="2021 - 10.000 kms"
+        precio="$60.000.000"
+      />
+    </div>
+  </div>
 </Layout>

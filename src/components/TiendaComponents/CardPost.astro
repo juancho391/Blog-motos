@@ -1,0 +1,35 @@
+---
+interface Props {
+  title: string;
+  body: string;
+  hrefIMG: string;
+  precio: string;
+}
+
+const { hrefIMG, body, precio, title } = Astro.props;
+---
+
+<div
+  class="relative bg-white w-72 w-min-40 h-72 mt-3 hover:animate-heartbeat box-content shadow-lg shadow-black rounded-sm rounded-b-xl"
+>
+  <div class="h-48">
+    <img
+      class="w-full w-min0 h-full object-cover rounded-sm"
+      src={hrefIMG}
+      alt="Imagen"
+    />
+  </div>
+  <div class="pl-3">
+    <h3 class="font-bold text-lg">{title}</h3>
+    <div class="h-full">
+      <p class="h-4 text-justify text-[12px] truncate overflow-hidden">
+        {body}
+      </p>
+    </div>
+    <div
+      class="absolute bottom-0 right-0 p-2 bg-black rounded-br-xl rounded-tl-xl"
+    >
+      <h6 class="text-[10px] my-auto text-sm text-white">{precio}</h6>
+    </div>
+  </div>
+</div>

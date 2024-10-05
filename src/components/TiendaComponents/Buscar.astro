@@ -4,21 +4,73 @@ import Filtro from "../../../public/images/Buscador/Filtro.svg";
 ---
 
 <div
-  class="flex bg-white w-72 rounded-3xl justify-between m-auto my-3 border-2 border-black"
+  class="absolute z-20 flex bg-white rounded-3xl justify-between my-3 border-2 border-black w-[268px] left-1/2 -translate-x-1/2"
 >
   <input
     type="text"
     name=""
     id="Buscador"
     placeholder="Buscar"
-    class="px-2 rounded-full outline-none"
+    class="px-2 rounded-l-full outline-none border-b-2 border-black"
   />
   <label for="Buscador">
-    <div class="py-1 px-3 rounded-full border-r-2 border-black">
-      <img src={Lupa.src} alt="" class="h-5" />
+    <div class="py-1 px-3 rounded-r-full border-b-2 border-r-2 border-black">
+      <img src={Lupa.src} alt="" class="h-5 w-5" />
     </div>
   </label>
-  <div class="py-1 pr-2">
-    <img src={Filtro.src} alt="" class="h-5" />
-  </div>
+  <details class="py-1 pr-2 relative">
+    <summary class="cursor-pointer flex">
+      <img src={Filtro.src} alt="" class="h-5" />
+    </summary>
+    <form
+      class="absolute bg-white -right-0.5 w-[268px] -z-10 top-4 pt-6 rounded-b-xl border-x-2 border-b-2 border-black"
+    >
+      <h3 class="ml-10">FILTRAR POR</h3>
+      <div class="flex flex-grow">
+        <div class="ml-5">
+          <p class="text-sm">MODELO</p>
+          <input
+            type="text"
+            name=""
+            id=""
+            class="outline-none border-2 border-black w-16 px-1"
+          />
+        </div>
+        <div class="ml-5">
+          <p class="text-sm">MARCA</p>
+          <input
+            type="text"
+            name=""
+            id=""
+            class="outline-none border-2 border-black w-16 px-1"
+          />
+        </div>
+      </div>
+      <h3 class="text-sm m-3">PRECIO</h3>
+      <div class="flex flex-grow">
+        <div class="ml-5">
+          <input
+            type="number"
+            name=""
+            id=""
+            class="outline-none border-2 border-black w-16 px-1"
+          />
+          <p class="text-sm">MINIMO</p>
+        </div>
+        <div class="ml-5">
+          <input
+            type="number"
+            name=""
+            id=""
+            class="outline-none border-2 border-black w-16 px-1"
+          />
+          <p class="text-sm">MAXIMO</p>
+        </div>
+        <button
+          class="bg-fondo rounded-full my-2 px-2 text-sm ml-3 hover:bg-nav"
+          >FILTRAR</button
+        >
+      </div>
+    </form>
+  </details>
 </div>

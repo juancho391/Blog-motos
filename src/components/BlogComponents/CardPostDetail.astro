@@ -1,0 +1,26 @@
+---
+interface Props {
+  title: string;
+  body: string;
+  hrefIMG: string;
+  dateTime: string;
+}
+
+const { hrefIMG, body, dateTime, title } = Astro.props;
+---
+
+<div
+  class="w-full h-full bg-white hover:animate-heartbea rounded-sm">
+  <div class="w-[600px]">
+    <img class="rounded-sm mx-auto h-[400px] " src={hrefIMG} alt="Imagen" />
+  </div>
+  <div class="mx-7">
+    <h3 class="text-center font-bold text-xl mx-9 mt-3">{title}</h3>
+	<div class="">
+		<p class=" text-justify text-[12px] mt-3">{body}</p>
+	</div>
+    <h6 class="text-[10px] my-auto ">{dateTime}</h6>
+  </div>
+</div>
+
+

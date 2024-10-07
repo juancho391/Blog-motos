@@ -4,23 +4,27 @@ import Layout from "@/layouts/Layout.astro"
 const image1 =  "../../public/images/fondo.jpg"
 import {Dock} from "@/components/ui/dock"
 const icon1 = "../../public/images/instagramfoot.svg"
+import CardRopa from "@/components/TiendaComponents/CardRopa.astro"
+const imageExample = "../../public/images/camisaVerde.png"
 ---
 
 <Layout title="prueba">
-    <div class="bg-black flex items-center justify-center w-full mt-6">
-        <div class="flex items-center justify-center w-full ">
-            
-            <Marquee className=""  reverse={true} pauseOnHover={true} vertical={false} repeat={3} client:load>
-                <img src={image1} alt="" class="w-72">
-                <img src={image1} alt="" class="w-72">
-                <img src={image1} alt="" class="w-72">
-            </Marquee>
-        </div>
-    </div>
-
-    <Dock client:visible >
-        <a href=""><img src={icon1} alt=""></a>
-    </Dock>
-        
-
+    <CardRopa title="Camisa Verde" precio="$80.000" hrefIMG={imageExample}></CardRopa>
+    
+    
 </Layout>
+
+<!-- <div class="bg-black flex items-center justify-center w-full mt-6">
+    <div class="flex items-center justify-center w-full ">
+        
+        <Marquee className=""  reverse={true} pauseOnHover={true} vertical={false} repeat={3} client:load>
+            <img src={image1} alt="" class="w-72">
+            <img src={image1} alt="" class="w-72">
+            <img src={image1} alt="" class="w-72">
+        </Marquee>
+    </div>
+</div>
+
+<Dock client:visible >
+   <img src={icon1} alt="">
+</Dock> -->

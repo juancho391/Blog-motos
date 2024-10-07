@@ -6,6 +6,7 @@ import NavBar from "../components/NavBar.astro";
 import Redes from "../components/RedesSociales.astro";
 import imageHome from "../../public/images/imageHome.svg";
 import Footer from "../components/Footer.astro";
+import Typing from "@/components/ui/typing-animation"
 ---
 
 <Layout title="Home.">
@@ -25,8 +26,8 @@ import Footer from "../components/Footer.astro";
       <p
         class="mt-96 text-center text-white text-lg font-semibold md:text-4xl animate-blurred-fade-in md:mt-72 lg:mt-96"
       >
-        WELCOME TO MY WEB SITE
-      </p>
+    </p>
+    <Typing className="text-white " text="WELCOME TO MY WEB SITE" duration={200} client:load></Typing>
     </div>
     <Redes />
   </section>

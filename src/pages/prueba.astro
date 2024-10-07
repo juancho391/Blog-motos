@@ -1,0 +1,26 @@
+---
+import Marquee from "@/components/ui/marquee"
+import Layout from "@/layouts/Layout.astro"
+const image1 =  "../../public/images/fondo.jpg"
+import {Dock} from "@/components/ui/dock"
+const icon1 = "../../public/images/instagramfoot.svg"
+---
+
+<Layout title="prueba">
+    <div class="bg-black flex items-center justify-center w-full mt-6">
+        <div class="flex items-center justify-center w-full ">
+            
+            <Marquee className=""  reverse={true} pauseOnHover={true} vertical={false} repeat={3} client:load>
+                <img src={image1} alt="" class="w-72">
+                <img src={image1} alt="" class="w-72">
+                <img src={image1} alt="" class="w-72">
+            </Marquee>
+        </div>
+    </div>
+
+    <Dock client:visible >
+        <a href=""><img src={icon1} alt=""></a>
+    </Dock>
+        
+
+</Layout>

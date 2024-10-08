@@ -1,0 +1,112 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import CardRopa from "@/components/TiendaComponents/CardRopa.astro";
+const imageExample = "../../public/images/camisaVerde.png";
+import NavBar from "../components/TiendaComponents/NavBar.astro";
+import NavCategorias from "../components/TiendaComponents/NavCategorias.astro";
+import Redes from "../components/RedesSociales.astro";
+import Buscar from "../components/TiendaComponents/Buscar.astro";
+import Footer from "@/components/Footer.astro";
+import BuscadorDesktop from "@/components/TiendaComponents/BuscarDesktop.astro";
+---
+
+<Layout title="Tienda de Ropa">
+  <NavBar />
+  <NavCategorias />
+  <Redes />
+  <div class="md:hidden">
+    <Buscar />
+  </div>
+  <div class="flex flex-row relative justify-between">
+    <div class="w-80 h-auto hidden md:block bg-black px-6">
+      <BuscadorDesktop />
+      <form
+        class="text-white top-4 pt-6 rounded-b-xl border-x-2 border-b-2 border-black"
+      >
+        <h3 class="ml-10">FILTRAR POR</h3>
+        <h3 class="text-sm m-3">PRECIO</h3>
+        <div class="flex flex-grow">
+          <div class="ml-5">
+            <input
+              type="number"
+              name=""
+              id=""
+              class="text-black outline-none border-2 border-black w-16 px-1"
+            />
+            <p class="text-sm">MINIMO</p>
+          </div>
+          <div class="ml-5">
+            <input
+              type="number"
+              name=""
+              id=""
+              class="text-black outline-none border-2 border-black w-16 px-1"
+            />
+            <p class="text-sm">MAXIMO</p>
+          </div>
+        </div>
+        <button class="bg-fondo rounded-full my-8 px-2 text-lg hover:bg-nav"
+          >FILTRAR</button
+        >
+      </form>
+    </div>
+
+    <div class="w-72 sm:w-4/5 m-auto bg-fondo pb-10 md:pb-72">
+      <div class="flex flex-wrap gap-4 justify-center">
+        <CardRopa
+          title="Camisa Verde"
+          precio="$80.000"
+          hrefIMG={imageExample}
+        />
+        <CardRopa
+          title="Camisa Verde"
+          precio="$80.000"
+          hrefIMG={imageExample}
+        />
+        <CardRopa
+          title="Camisa Verde"
+          precio="$80.000"
+          hrefIMG={imageExample}
+        />
+        <CardRopa
+          title="Camisa Verde"
+          precio="$80.000"
+          hrefIMG={imageExample}
+        />
+        <CardRopa
+          title="Camisa Verde"
+          precio="$80.000"
+          hrefIMG={imageExample}
+        />
+        <CardRopa
+          title="Camisa Verde"
+          precio="$80.000"
+          hrefIMG={imageExample}
+        />
+        <CardRopa
+          title="Camisa Verde"
+          precio="$80.000"
+          hrefIMG={imageExample}
+        />
+        <CardRopa
+          title="Camisa Verde"
+          precio="$80.000"
+          hrefIMG={imageExample}
+        />
+        <CardRopa
+          title="Camisa Verde"
+          precio="$80.000"
+          hrefIMG={imageExample}
+        />
+        <CardRopa
+          title="Camisa Verde"
+          precio="$80.000"
+          hrefIMG={imageExample}
+        />
+      </div>
+    </div>
+    <div class="absolute bottom-0">
+      <Footer />
+    </div>
+  </div>
+</Layout>

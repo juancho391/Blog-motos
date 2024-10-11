@@ -5,6 +5,7 @@ import instagramfoot from "../../public/images/instagramfoot.svg";
 import facebookfoot from "../../public/images/facebookfoot.svg";
 import youtubefoot from "../../public/images/youtubefoot.svg";
 import tiktokfoot from "../../public/images/tiktokfoot.svg";
+import Whatsapp from "../../public/images/whatsapp.png";
 ---
 
 <footer>
@@ -14,9 +15,14 @@ import tiktokfoot from "../../public/images/tiktokfoot.svg";
   <div
     class="relative hidden md:flex md:flex-wrap w-screen bg-black h-40 justify-between px-20"
   >
-    <div class="flex left-24 -top-14 h-24 w-60 justify-between">
+    <div
+      class="flex left-24 -top-14 h-24 gap-4 w-60 items-center justify-between"
+    >
       <img src={Logo.src} alt="" class="w-24 rounded-full mr-5" />
-      <a href="" class="text-white my-auto text-lg">Contactame</a>
+      <a href="" class="text-white text-lg flex items-center gap-4"
+        >Contactame
+        <img src={Whatsapp.src} alt="" class="h-10" />
+      </a>
     </div>
     <p class="absolute text-white bottom-2 left-2">© 2024 NOMBRE</p>
     <div class="right-72 bottom-16 w-72">
@@ -30,4 +36,3 @@ import tiktokfoot from "../../public/images/tiktokfoot.svg";
     </div>
   </div>
 </footer>
-

@@ -1,0 +1,31 @@
+---
+const backIcon = "../../../public/images/backIcon.svg";
+interface Props {
+  title: string;
+  hrefIMG: string;
+  description: string;
+  precio: string;
+}
+
+const { hrefIMG, precio, description, title } = Astro.props;
+---
+
+<div class="flex flex-col 2xl:flex-row 2xl:h-full justify-between p-4 2xl:p-10">
+  <div class="left-0 z-20 w-8 absolute top-0 mt-2 ml-1">
+    <a href="/Tienda">
+      <img src={backIcon} alt="" class="relative hover:bg-white rounded-md" />
+    </a>
+  </div>
+  <div class="m-auto 2xl:w-full 2xl:h-full">
+    <img src={hrefIMG} alt="" class="object-contain h-full" />
+  </div>
+  <div class="text-lg 2xl:text-xl p-4 2xl:w-4/6 m-auto">
+    <h3 class="text-center text-4xl 2xl:text-6xl">{title}</h3>
+    <p class="my-12">{precio}</p>
+    <p>{description}</p>
+    <button
+      class="bg-[#0B16F0] hover:bg-[#5258d0] px-6 my-4 rounded-3xl text-white"
+      >COMPRAR</button
+    >
+  </div>
+</div>

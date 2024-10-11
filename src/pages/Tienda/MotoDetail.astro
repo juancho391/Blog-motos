@@ -1,0 +1,18 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CardMotoDetail from "../../components/TiendaComponents/CardMotoDetail.astro";
+const Moto = "../../../public/images/moto.svg";
+---
+
+<Layout title="Tienda-Moto-Detail">
+  <div class="flex items-center justify-center xl:h-screen w-screen">
+    <div class="bg-white h-5/6 w-5/6">
+      <CardMotoDetail
+        hrefIMG={Moto}
+        title="YAMAHA MT-09"
+        precio="$60.000.000"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vero, asperiores dolore, repellat sapiente voluptate, quas architecto odio error fugiat qui nihil numquam tenetur doloremque. Voluptate reprehenderit molestiae, corporis voluptatibus cumque architecto porro repudiandae esse eveniet adipisci doloribus. Dolore tempore earum amet, saepe asperiores quasi temporibus omnis beatae consequuntur non.Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vero, asperiores dolore, repellat sapiente voluptate, quas architecto odio error fugiat qui nihil numquam tenetur doloremque. Voluptate reprehenderit molestiae, corporis voluptatibus cumque architecto porro repudiandae esse eveniet adipisci doloribus. Dolore tempore earum amet, saepe asperiores quasi temporibus omnis beatae consequuntur non."
+      />
+    </div>
+  </div>
+</Layout>

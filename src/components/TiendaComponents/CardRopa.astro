@@ -5,25 +5,27 @@ interface Props {
   precio: string;
 }
 
-const { hrefIMG,  precio, title} = Astro.props;
+const { hrefIMG, precio, title } = Astro.props;
 ---
 
-<div
-  class="relative bg-white w-72 w-min-40 h-80 mt-3 hover:animate-heartbeat box-content shadow-lg shadow-black rounded-sm rounded-b-xl"
->
-  <div class="has-[30px]:">
-    <img
-      class="w-full w-min0 h-full object-cover rounded-sm"
-      src={hrefIMG}
-      alt="Imagen"
-    />
-  </div>
-  <div class="pl-3">
-    <h3 class="font-bold text-lg">{title}</h3>
-    <div
-      class="absolute bottom-0 right-0 p-1 px- bg-black rounded-br-xl rounded-tl-xl"
-    >
-      <h6 class="text-[10px] my-auto text-sm text-white">{precio}</h6>
+<a href="/Tienda/RopaDetail">
+  <div
+    class="relative bg-white w-72 w-min-40 h-80 mt-3 hover:animate-heartbeat box-content shadow-lg shadow-black rounded-sm rounded-b-xl"
+  >
+    <div class="has-[30px]:">
+      <img
+        class="w-full w-min0 h-full object-cover rounded-sm"
+        src={hrefIMG}
+        alt="Imagen"
+      />
+    </div>
+    <div class="pl-3">
+      <h3 class="font-bold text-lg">{title}</h3>
+      <div
+        class="absolute bottom-0 right-0 p-1 px- bg-black rounded-br-xl rounded-tl-xl"
+      >
+        <h6 class="text-[10px] my-auto text-sm text-white">{precio}</h6>
+      </div>
     </div>
   </div>
-</div>
+</a>

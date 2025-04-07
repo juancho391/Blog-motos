@@ -1,54 +1,52 @@
-# Astro Starter Kit: Basics
+# 🏍️ MotoVibes Blog
 
-```sh
-npm create astro@latest -- --template basics
-```
+Bienvenido a **MotoVibes**, un blog desarrollado con **Astro** que nace de la pasión por las motos, la comunidad biker y la libertad sobre dos ruedas.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Este sitio es un espacio donde el dueño del blog comparte sus aventuras, pensamientos y estilo de vida, incluyendo contenido multimedia, motos en venta de la comunidad, y productos de su marca personal.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🚀 Tecnologías Utilizadas
 
-## 🚀 Project Structure
+- [Astro](https://astro.build/) – Framework principal
+- [TailwindCSS](https://tailwindcss.com/) – Estilos rápidos y responsivos
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🛠️ Funcionalidades
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### ✍️ Blog de Historias
+- El dueño del blog puede publicar artículos donde narra experiencias, rutas, tips y más.
+- Cada historia puede incluir un video relacionado desde YouTube.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### 🏍️ Motos de la Comunidad
+- Sección dedicada a publicar **motos en venta** de seguidores del blog.
+- Cada moto incluye detalles técnicos, fotos y contacto.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### 👕 Tienda de Ropa Biker
+- Sección donde se muestra el catálogo de **ropa de la marca personal** del blog.
+- Incluye imágenes, descripciones y enlaces de compra.
 
-Any static assets, like images, can be placed in the `public/` directory.
+---
 
-## 🧞 Commands
+## 📸 Vista previa
+<img width="1440" alt="Screenshot 2025-04-07 at 5 26 02 PM" src="https://github.com/user-attachments/assets/0a34d694-7e18-4722-a781-b42127b961b5" />
+<img width="1440" alt="Screenshot 2025-04-07 at 5 26 43 PM" src="https://github.com/user-attachments/assets/02e4704f-002b-4c6c-91a6-abc45f5cf675" />
+---
 
-All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 📦 Instalación local
 
-## 👀 Want to learn more?
+```bash
+# 1. Clona este repositorio
+git clone https://github.com/tuusuario/motovibes-blog.git
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+# 2. Entra a la carpeta del proyecto
+cd Blog-motos
+
+# 3. Instala las dependencias
+npm install
+
+# 4. Inicia el servidor de desarrollo
+npm run dev
+
+

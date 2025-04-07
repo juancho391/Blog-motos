@@ -1,5 +1,8 @@
 # 🏍️ MotoVibes Blog
 
+🎯 Propósito del Proyecto
+Este proyecto fue desarrollado como parte de mi proceso de aprendizaje con Astro, con el objetivo de explorar cómo crear sitios rápidos, modernos y fáciles de mantener usando este framework.
+
 Bienvenido a **MotoVibes**, un blog desarrollado con **Astro** que nace de la pasión por las motos, la comunidad biker y la libertad sobre dos ruedas.
 
 Este sitio es un espacio donde el dueño del blog comparte sus aventuras, pensamientos y estilo de vida, incluyendo contenido multimedia, motos en venta de la comunidad, y productos de su marca personal.
